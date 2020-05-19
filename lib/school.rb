@@ -8,8 +8,13 @@ attr_accessor :roster, :school
   end
   
   def add_student(full_name, grade)
-    @roster[grade] = []
-    @roster[grade] << full_name
+    if @roster[grade] 
+      @roster[grade] << full_name
+    else
+      @roster[grade] = []
+      @roster[grade] << full_name
+    end
+      
     puts @roster
   end 
   
