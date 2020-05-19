@@ -14,4 +14,8 @@ attr_accessor :roster, :school
       @roster = {grade => [full_name]}
     end
   end 
+  
+  def grade(grade_number)
+    self.grade[grade_number]
+  end
 end
