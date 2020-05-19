@@ -24,11 +24,9 @@ attr_accessor :roster, :school
   
   def sort
     sorted_grades = @roster.sort.to_h
-    puts sorted_grades
     sorted_grades.each do |grade, student|
-      student.sort
+      sorted_grades[grade] = student.sort
     end
-    puts sorted_grades
     sorted_grades
   end
 end
