@@ -1,6 +1,6 @@
 class School
   def initialize(school_name)
     @school = school_name
-    @roster = []
+    @roster = {}
   end
 end
