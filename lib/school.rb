@@ -9,8 +9,9 @@ attr_accessor :roster, :school
   
   def add_student(full_name, grade)
     if @roster[grade]
-      @roster = {grade => [full_name]}
+        @roster[grade]<< full_name
     else
-      @roster[grade]<< full_name
+      @roster = {grade => [full_name]}
+    end
   end 
 end
