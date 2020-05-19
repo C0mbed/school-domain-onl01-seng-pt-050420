@@ -25,7 +25,8 @@ attr_accessor :roster, :school
   def sort
     sorted_grades = @roster.sort.to_h
     sorted_grades.each do |grade, student|
-      binding.pry
+      student.sort
     end
+    sorted_grades
   end
 end
