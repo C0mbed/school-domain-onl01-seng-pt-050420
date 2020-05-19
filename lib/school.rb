@@ -14,11 +14,14 @@ attr_accessor :roster, :school
       @roster[grade] = []
       @roster[grade] << full_name
     end
-      
-    puts @roster
   end 
   
   def grade(grade_number)
     self.roster[grade_number]
+  end
+  
+  def sort
+    @roster.each do |grade, students|
+      students.sort
   end
 end
