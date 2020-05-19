@@ -23,7 +23,9 @@ attr_accessor :roster, :school
   def sort
     sorted = @roster.sort.to_h
     sorted.each do |grade, student|
-      student.sort
+      student.sort do |a, b|
+       a <=> b
+      end
     end
   end
 end
