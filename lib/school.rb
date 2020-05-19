@@ -22,5 +22,8 @@ attr_accessor :roster, :school
   
   def sort
     @roster.sort.to_h
+    @roster.each do |grade, student|
+      student.sort
+    end
   end
 end
