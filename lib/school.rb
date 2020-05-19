@@ -8,8 +8,8 @@ attr_accessor :roster, :school
   end
   
   def add_student(full_name, grade)
-    @roster[grade] += [full_name]
-    puts full_name
+    @roster[grade] = []
+    puts @roster
   end 
   
   def grade(grade_number)
