@@ -21,6 +21,6 @@ attr_accessor :roster, :school
   end
   
   def sort
-    @roster.sort._to
+    @roster.sort.to_h
   end
 end
