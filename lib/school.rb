@@ -9,6 +9,7 @@ attr_accessor :roster, :school
   
   def add_student(full_name, grade)
     @roster[grade] = []
+    @roster[grade] << full_name
     puts @roster
   end 
   
