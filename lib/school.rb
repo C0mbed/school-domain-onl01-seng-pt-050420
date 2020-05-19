@@ -16,6 +16,6 @@ attr_accessor :roster, :school
   end 
   
   def grade(grade_number)
-    self.grade[grade_number]
+    self.roster[grade_number]
   end
 end
